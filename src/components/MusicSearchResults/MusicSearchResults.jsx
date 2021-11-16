@@ -22,15 +22,39 @@ class MusicSearchResults extends Component {
             console.log(error);
         }
     }
+
+    displayMusicResults() {
+        let renderedMusic = this.state.music.map((song) => {
+            return (
+                <tr key={song.id}>
+                    <td>{song.title}</td>
+                    <td>{song.album}</td>
+                    <td>{song.artist}</td>
+                    <td>{song.genre}</td>
+                    <td>{song.releaseDate}</td>
+                </tr>
+            );
+        });
+            return (
+                <table>
+                    <tr>
+                        <th>Song Title</th>
+                        <th>Album</th>
+                        <th>Artist</th>
+                        <th>Genre</th>
+                        <th>Year</th>
+                    </tr>
+                    {renderedMusic}
+                </table>
+            );
+    };
     
     render() {
         console.log(this.state)
         return (
             <div className="MusicSearchResults">
-                <h2>Music Search Results</h2>
-                {this.state.music.length > 0 ? this.state.music.map((song) => {
-                    return <p key={song.id}>{song.title}</p>
-                }) : <h3>Searching For Music...</h3> }
+                {this.state.music.length > 0 ? this.displayMusicResults()
+                : <h3>Searching For Music...</h3> }
             </div>
         );
     }
