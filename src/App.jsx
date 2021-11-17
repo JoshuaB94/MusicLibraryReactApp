@@ -1,11 +1,16 @@
-import React from 'react';
+import React, {Component} from 'react';
 import MusicSearchResults from './components/MusicSearchResults/MusicSearchResults';
+import SearchBar from './components/SearchBar/SearchBar';
 
-
-const App = (props) => {
-    return (
-        <MusicSearchResults />
-    )
+class App extends (Component) {
+    render() {
+        return (
+            <div>
+                <SearchBar />
+                <MusicSearchResults />
+            </div>
+        )
+    }
 }
 
 export default App;
