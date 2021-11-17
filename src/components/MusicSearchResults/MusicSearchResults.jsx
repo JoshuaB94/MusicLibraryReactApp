@@ -2,11 +2,6 @@ import React from 'react';
 import axios from 'axios';
 
 function MusicSearchResults (props) {
-    
-
-    
-
-    
 
     const displayMusicList =()=> {
         return <div>

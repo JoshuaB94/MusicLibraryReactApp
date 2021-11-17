@@ -16,7 +16,7 @@ class App extends (Component) {
         this.fetchMusic();
     }
 
-    filterSongs=(searchTerm)=>{
+    filterSongs = (searchTerm) => {
         let filter = this.state.music.filter(function(song){
             if(song.title.includes(searchTerm) ||
             song.artist.includes(searchTerm) || song.album.includes(searchTerm) ||song.genre.includes(searchTerm))
