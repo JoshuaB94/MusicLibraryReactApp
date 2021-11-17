@@ -23,20 +23,10 @@ class MusicSearchResults extends Component {
         }
     }
 
-    displayMusicResults() {
-        let renderedMusic = this.state.music.map((song) => {
-            return (
-                <tr key={song.id}>
-                    <td>{song.title}</td>
-                    <td>{song.album}</td>
-                    <td>{song.artist}</td>
-                    <td>{song.genre}</td>
-                    <td>{song.releaseDate}</td>
-                </tr>
-            );
-        });
-            return (
+    displayMusicList() {
+        return <div>
                 <table>
+                <thead>
                     <tr>
                         <th>Song Title</th>
                         <th>Album</th>
@@ -44,17 +34,27 @@ class MusicSearchResults extends Component {
                         <th>Genre</th>
                         <th>Year</th>
                     </tr>
-                    {renderedMusic}
+                </thead>
+                <tbody>
+                {this.state.music.map((song) => (
+                    <tr key={song.id}>
+                        <td>{song.title}</td>
+                        <td>{song.album}</td>
+                        <td>{song.artist}</td>
+                        <td>{song.genre}</td>
+                        <td>{song.releaseDate}</td>
+                    </tr>
+                ))}
+                </tbody>
                 </table>
-            );
+            </div>;
     };
     
     render() {
-        console.log(this.state)
         return (
-            <div className="MusicSearchResults">
-                {this.state.music.length > 0 ? this.displayMusicResults()
-                : <h3>Searching For Music...</h3> }
+            <div>
+                {this.state.music.length > 0 ? this.displayMusicList()
+                : <h4>Searching for Music....</h4>}
             </div>
         );
     }
