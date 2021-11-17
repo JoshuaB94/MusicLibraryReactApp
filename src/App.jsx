@@ -18,8 +18,8 @@ class App extends (Component) {
 
     filterSongs = (searchTerm) => {
         let filter = this.state.music.filter(function(song){
-            if(song.title.includes(searchTerm) ||
-            song.artist.includes(searchTerm) || song.album.includes(searchTerm) ||song.genre.includes(searchTerm))
+            if(song.title.toLowerCase().includes(searchTerm) ||
+            song.artist.toLowerCase().includes(searchTerm) || song.album.toLowerCase().includes(searchTerm) ||song.genre.toLowerCase().includes(searchTerm))
             {
                 return true;
             }
