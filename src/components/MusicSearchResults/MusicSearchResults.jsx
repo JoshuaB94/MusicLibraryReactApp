@@ -4,10 +4,10 @@ import './MusicSearchResults.css';
 function MusicSearchResults (props) {
 
     const displayMusicList =()=> {
-        return <div className="container--xl">
-                <table className="table table-hover table-striped caption-top table-borderless shadow rounded">
+        return <div className="container--xl musicContainer">
+                <table className="musicTable caption-top">
                 <caption>devCodeCamp Music Playlist</caption>
-                <thead className="table-dark">
+                <thead className="musicTable-heading">
                     <tr>
                         <th>#</th>
                         <th>Song Title</th>
@@ -17,7 +17,7 @@ function MusicSearchResults (props) {
                         <th>Year</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className="musicTable-body">
                 {props.musicToDisplay.map((song) => (
                     <tr key={song.id}>
                         <td>{song.id}</td>

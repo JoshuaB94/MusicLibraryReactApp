@@ -1,7 +1,3 @@
-td {
-    color: #1c1c1c;
-}
-
 tbody {
     background-color: white;
     text-align: center;
@@ -20,6 +16,36 @@ h4 {
     color: black;
 }
 
+.musicTable {
+  width: 100%;
+}
+
+.musicTable-heading {
+  background-color: black;
+  color: white;
+}
+
+th {
+  padding: 18px;
+}
+
+td {
+  padding: 18px;
+  color: #1c1c1c;
+}
+
+tbody tr:hover {
+  background-color: #EEEEEE;
+}
+
+
+tr:nth-child(even) {
+  background-color: #F7F7F7;
+}
+
+.musicContainer {
+  margin-top: 2%;
+}
 
 /*---Loading Search Animation---*/
 .lds-ellipsis {
