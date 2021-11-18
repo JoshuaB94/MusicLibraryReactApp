@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './SearchBar.css';
 
 const SearchBar = (props) => {
     const [filteredSongs] = useState([]);
@@ -10,15 +11,14 @@ const SearchBar = (props) => {
     }
 
     return (
-        <div>
-            <div>
-                {/* <i class="bi bi-search"></i> */}
+        <div className="searchBar-container">
+            <div className="searchBar-block">
                 <input 
                 type="text"
                 placeholder={props.placeholder}
                 value={wordEntered}
                 onChange={handleFilter}
-                className="form-control library-search"
+                className="searchInput"
                 />
             </div>
 

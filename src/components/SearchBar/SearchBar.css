@@ -1,0 +1,36 @@
+.searchBar-container {
+    margin: auto;
+    background-color: none;
+    width: 50%
+  }
+  
+  .searchInput {
+    width: 100%;
+    border: 0;
+    font-size: 23px;
+    margin: auto;
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #294c5b;
+    
+    box-shadow:
+    0.6px 1.1px 2.2px rgba(0, 0, 0, 0.016),
+    1.4px 2.6px 5.1px rgba(0, 0, 0, 0.027),
+    2.5px 4.6px 9.1px rgba(0, 0, 0, 0.035),
+    4.2px 7.7px 15.1px rgba(0, 0, 0, 0.042),
+    6.9px 12.7px 24.9px rgba(0, 0, 0, 0.049),
+    12px 22.2px 43.5px rgba(0, 0, 0, 0.06),
+    26px 48px 94px rgba(0, 0, 0, 0.08);
+  }
+  
+  .searchBar-block {
+    width: 100%;
+    margin: auto;
+  }
+  
+  
+  
