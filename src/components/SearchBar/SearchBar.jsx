@@ -8,21 +8,17 @@ const SearchBar = (props) => {
         setWordEntered(search.target.value)
         props.filterFunction(search.target.value)
     }
-     
-    // const clearUserInput = () => {
-        //  filteredSongs([]);
-        //  setWordEntered("");
-        // };
-    
 
     return (
         <div>
             <div>
+                {/* <i class="bi bi-search"></i> */}
                 <input 
                 type="text"
                 placeholder={props.placeholder}
                 value={wordEntered}
                 onChange={handleFilter}
+                className="form-control library-search"
                 />
             </div>
 

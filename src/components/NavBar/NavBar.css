@@ -1,0 +1,12 @@
+.app-name {
+    text-transform: uppercase;
+    color: white ;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.app-navbar {
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 1%;
+}

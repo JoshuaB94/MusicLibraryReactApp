@@ -1,0 +1,10 @@
+.app-container {
+    background: #0F2027;
+    background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  
+    background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+
+    padding: 5rem;
+    height: 100vh;
+
+    
+}

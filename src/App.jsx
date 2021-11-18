@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
+import axios from 'axios';
 import MusicSearchResults from './components/MusicSearchResults/MusicSearchResults';
 import SearchBar from './components/SearchBar/SearchBar';
-import axios from 'axios';
+import NavBar from './components/NavBar/NavBar';
+import './App.css';
 
 class App extends (Component) {
     constructor(props) {
@@ -44,9 +46,12 @@ class App extends (Component) {
     render() {
         return (
             <div>
+                <NavBar />
+                <div className="app-container">
                 <SearchBar placeholder="Search for Song, Album, Artist, etc." filterFunction = {this.filterSongs}/>
                 <br></br>
                 <MusicSearchResults musicToDisplay = {this.state.filteredSongs}/>
+                </div>
             </div>
         )
     }
