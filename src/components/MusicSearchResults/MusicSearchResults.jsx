@@ -5,7 +5,7 @@ function MusicSearchResults (props) {
 
     const displayMusicList =()=> {
         return <div className="container--xl">
-                <table className="table table-hover table-striped caption-top table-borderless shadow p-3 mb-5 bg-body rounded">
+                <table className="table table-hover table-striped caption-top table-borderless shadow rounded">
                 <caption>devCodeCamp Music Playlist</caption>
                 <thead className="table-dark">
                     <tr>
