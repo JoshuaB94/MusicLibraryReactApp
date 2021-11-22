@@ -33,7 +33,7 @@ class App extends (Component) {
 
     async fetchMusic() {
         try {
-            let musicLibrary = await axios.get("http://www.devcodecampmusiclibrary.com/api/music");
+            let musicLibrary = await axios.get("http://localhost:1000/api/songs");
             console.log(musicLibrary.data);
             this.setState({
                 music: musicLibrary.data, filteredSongs : musicLibrary.data
